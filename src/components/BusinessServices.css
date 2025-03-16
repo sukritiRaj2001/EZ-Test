@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+/* ✅ Ensure the body and html are fully scrollable */
+html, body {
+    height: auto !important;
+    overflow-y: auto !important;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
 /* ✅ Main Container */
 .container {
     display: flex;
@@ -7,19 +14,21 @@
     align-items: flex-start;
     max-width: 95%;
     height: 100%;
+    min-height: 100%;
     padding: 100px 20px;
     margin: auto;
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
-    gap: 50px; /* Increased gap */
+    gap: 50px; 
 }
 
 /* ✅ Left Content */
 .left-content {
     flex: 45%;
     text-align: left;
+    margin-top: 40px;
 }
 
 /* ✅ Logo & Heading */
@@ -217,6 +226,7 @@
     .left-content {
         order: 1; /* Ensures content comes first */
         text-align: center;
+        margin-top: 20px;
     }
 
     .services {

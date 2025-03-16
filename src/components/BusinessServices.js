@@ -23,7 +23,6 @@ const [error, setError] = useState("");
       setMessage(response.message || "Form Submitted Successfully!");
       setError("");
       setEmail("");
-      alert(response.message);
     } catch (err) {
       setError(err.message || "Failed to submit. Try again.");
       setMessage("");
@@ -65,6 +64,7 @@ const [error, setError] = useState("");
             required
           />
           <button type="submit">Contact Me</button>
+          <span>{message}</span>
         </form>
       </div>
 
